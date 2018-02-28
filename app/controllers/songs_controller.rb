@@ -1,6 +1,5 @@
 class SongsController < ApplicationController
   def index
-    raise Song.new.inspect
   end
 
   def show
