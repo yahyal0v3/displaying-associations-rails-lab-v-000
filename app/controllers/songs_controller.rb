@@ -1,5 +1,6 @@
 class SongsController < ApplicationController
   def index
+    raise Song.new.inspect
   end
 
   def show
@@ -47,4 +48,3 @@ class SongsController < ApplicationController
     params.require(:song).permit(:title)
   end
 end
-
